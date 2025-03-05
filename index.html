@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داروخانه دامپزشکی - مراقبت ویژه از حیوانات</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body dir="rtl">
+    <header>
+        <nav>
+            <div class="logo">🐾 داروخانه دامپزشکی</div>
+            <ul class="nav-links">
+                <li><a href="#">خانه</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#products">محصولات</a></li>
+                <li><a href="#testimonials">نظرات مشتریان</a></li>
+                <li><a href="#contact">تماس با ما</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 style="color: #ffdd57; text-shadow: 2px 2px 5px black;">به داروخانه دامپزشکی خوش آمدید</h1>
+        <p>منبع مطمئن شما برای داروهای دامپزشکی و محصولات ویژه حیوانات خانگی.</p>
+        <a href="#products" class="btn">مشاهده محصولات</a>
+        <div class="pet-animations">
+            <img src="dog-animation.gif" alt="dog animation">
+            <img src="cat-animation.gif" alt="cat animation">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>درباره ما</h2>
+        <p>ما در داروخانه دامپزشکی متعهد به ارائه بهترین داروها، مکمل‌ها و محصولات مراقبتی برای حیوانات شما هستیم.</p>
+    </section>
+
+    <section id="products">
+        <h2>محصولات ما</h2>
+        <p>مجموعه‌ای از داروهای دامپزشکی با کیفیت بالا، غذای مقوی حیوانات و محصولات مراقبتی را کشف کنید.</p>
+    </section>
+
+    <section id="testimonials">
+        <h2>نظرات مشتریان</h2>
+        <p>"این داروخانه زندگی حیوانات من را نجات داده است! محصولات عالی و خدمات دوستانه." – سارا تهرانی</p>
+        <p>"توصیه می‌کنم! مکمل‌های حیوانی آنها تأثیر فوق‌العاده‌ای بر سلامت سگ من داشته است." – علی رضایی</p>
+    </section>
+
+    <section id="contact">
+        <h2>تماس با ما</h2>
+        <p>از داروخانه ما دیدن کنید یا برای مشاوره با ما تماس بگیرید.</p>
+        <p>ایمیل: hd.delavar@gmail.com</p>
+        <p>تلفن: +98 9151689118</p>
+        <p>آدرس: <strong>آزادی اکسپرس، مشهد، ایران</strong></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 داروخانه دامپزشکی. تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.hero h1, .hero p, .hero .btn').css({opacity: 0, position: 'relative', top: '20px'});
+            $('.hero h1').animate({opacity: 1, top: '0'}, 1000);
+            $('.hero p').delay(500).animate({opacity: 1, top: '0'}, 1000);
+            $('.hero .btn').delay(1000).animate({opacity: 1, top: '0'}, 1000);
+        });
+    </script>
+</body>
+</html>
